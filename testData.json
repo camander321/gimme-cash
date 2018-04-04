@@ -1,0 +1,15 @@
+{"gimmeCash": {
+  "users": [
+    {
+      "name":"cam"
+    },
+    {
+      "name":"david"
+    }
+  ],
+  "projects": [
+    {
+      "name":"test project"
+    }
+  ]
+}}

@@ -5,7 +5,7 @@ import { AngularFireDatabase, FirebaseListObservable, FirebaseObjectObservable }
 export class FirebaseUsersService {
 
   constructor(private database: AngularFireDatabase) {
-    database.list('users').subscribe(data => {console.log(data)});
+    // database.list('users').subscribe(data => {console.log(data)});
   }
 
 }

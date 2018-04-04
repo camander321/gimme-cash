@@ -1,21 +1,5 @@
-<!-- nav bar -->
-<!-- <app-nav></app-nav>
-<app-welcome></app-welcome> -->
-
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" routerLink="">Authentication Example</a>
-    </div>
-    <ul class="nav navbar-nav navbar-right">
-      <li *ngIf="user">
-        <a>{{user?.displayName}}</a>
-        <a (click)="logout()">Log out</a>
-      </li>
-      <li><img class='userphoto' src="{{user?.photoURL}}" alt=""></li>
-      <li *ngIf="!user">
-        <a (click)="login()">Log in</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+<app-nav></app-nav>
+<div class="container">
+  <app-welcome></app-welcome>
+  <router-outlet></router-outlet>
+</div>

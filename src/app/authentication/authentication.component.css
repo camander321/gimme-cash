@@ -1,0 +1,16 @@
+li {
+  list-style: none;
+}
+
+.nav-item {
+  margin-left: 10px;
+  margin-right: 10px;
+  /*transform: translate(0%, 50%);*/
+}
+
+.userphoto {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  flex: 0 0 auto;
+}

@@ -1,0 +1,10 @@
+<div class="collapse navbar-collapse">
+  <ul *ngIf='user' class="navbar-nav mr-auto">
+    <li class="nav-item active">{{user?.displayName}}</li>
+    <li class="nav-item active" (click)="logout()"><a href="#">Sign out</a></li>
+    <li class="nav-item active"><img class='userphoto' src="{{user?.photoURL}}" alt=""></li>
+  </ul>
+  <ul *ngIf='!user' class="navbar-nav mr-auto">
+    <li class="nav-item active"><button type="button" name="button" (click)="login()">Sign In With Google</button></li>
+  </ul>
+</div>

@@ -12,19 +12,12 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Contact</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Toolkit</a>
+      <li *ngIf="user" class="nav-item">
+        <a class="nav-link" routerLink="addProject">Add Project</a>
       </li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li>
-        <div *ngIf="false">
-          <a class="nav-link ml-auto" href="#">Username</a>
-        </div>
-        <div *ngIf="true">
-          <a class="nav-link ml-auto" href="#">Your account</a>
-        </div>
-      </li>
+      <app-authentication></app-authentication>
     </ul>
   </div>
 </nav>

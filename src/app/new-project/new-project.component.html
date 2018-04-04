@@ -1,0 +1,25 @@
+<form class="" action="index.html" method="post">
+  <label for="name"> Name Of Project
+    <input #name class="form-control" type="text" name="name" value="">
+  </label><br>
+  <label for="desc">Project Description
+    <textarea #desc class="form-control" name="desc" rows="4" cols="50"></textarea>
+  </label><br>
+  <label for="goal"> Fund Goal
+    <input #goal class="form-control" type="number" name="goal" value="">
+  </label><br>
+  <label for="type"> Fund Goal
+    <select #type class="form-control" name="type">
+      <option value="product">Product</option>
+      <option value="service">Service</option>
+      <option value="charity">Charity</option>
+    </select>
+  </label><br>
+  <button class="btn btn-success" type="button" (click)='
+    create(name.value, desc.value, goal.value, type.value);
+    name.value = "";
+    desc.value = "";
+    goal.value = "";
+    type.value = "product";
+  '>💸💸💸CREATE 💸💸💸</button>
+</form>

@@ -1,3 +1,23 @@
+## Goals for day 2
+
+### User authentication
+* Build out public and private displays (show more detail if user is logged in)
+* Show edit project button in detail page if signed in user is the owner
+* Create admin users who can control the world
+* Add form to fund projects if signed in
+
+### CRUD
+* Add delete project functionality if signed in user is the owner
+* Add update project functionality if signed in user is the owner
+
+###
+
+### Add Britney spears gimme more music video as the background if signed in
+
+
+
+
+
 # GimmeCash
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
