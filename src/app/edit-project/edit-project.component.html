@@ -1,0 +1,17 @@
+<label for="name"> New Project Name
+  <input [(ngModel)]="currentProject.name" class="form-control" type="text" name="name" value="">
+</label><br>
+<label for="desc">New Project Description
+  <textarea [(ngModel)]="currentProject.description" class="form-control" name="desc" rows="4" cols="50"></textarea>
+</label><br>
+<label for="goal"> New Fund Goal
+  <input [(ngModel)]="currentProject.fundGoal" class="form-control" type="number" name="goal" value="">
+</label><br>
+<label for="type"> New Type
+  <select [(ngModel)]="currentProject.type" class="form-control" name="type">
+    <option value="product">Product</option>
+    <option value="service">Service</option>
+    <option value="charity">Charity</option>
+  </select>
+  <button routerLink='/projects/{{projectKey}}' (click)='update()' (click)='hideUpdateForm()'>Save Changes</button>
+</label><br>

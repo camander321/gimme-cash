@@ -5,6 +5,7 @@
     <li class="nav-item active"><img class='userphoto' src="{{user?.photoURL}}" alt=""></li>
   </ul>
   <ul *ngIf='!user' class="navbar-nav mr-auto">
-    <li class="nav-item active"><button type="button" name="button" (click)="login()">Sign In With Google</button></li>
+    <li class="nav-item active"><button type="button" name="button" (click)="googleLogin()">Sign In With Google</button></li>
+    <li class="nav-item active"><button type="button" name="button" (click)="githubLogin()">Sign In With Github</button></li>
   </ul>
 </div>

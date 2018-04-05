@@ -12,9 +12,9 @@ export class NavComponent implements OnInit {
 public user;
 
 constructor(public authService: AuthenticationService) {
-  this.authService.user.subscribe(user => {this.user = user});
 }
   ngOnInit() {
+    this.authService.user.subscribe(user => {this.user = user});
   }
 
 }

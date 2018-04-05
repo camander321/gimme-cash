@@ -1,4 +1,36 @@
 h2:hover{
-  color: lightblue;
+  color: blue;
   cursor: pointer;
+}
+
+h2 {
+  margin-top: 0px;
+  padding-top:10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+h3 {
+  margin-top: 10px;
+  padding-top: 0px;
+  word-wrap:break-word;
+}
+
+.well {
+  border-width: 0px;
+  border-radius: 0px;
+  margin:0px;
+  padding-top:0px;
+  padding-bottom:5px;
+}
+.well:nth-child(odd) {
+  background-color: #ddff99;
+}
+.well:nth-child(even) {
+  background-color: #99ddff;
+}
+
+.outer {
+  overflow: hidden;
+  border-radius: 25px;
 }

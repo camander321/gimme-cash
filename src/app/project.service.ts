@@ -19,4 +19,13 @@ export class ProjectService {
   getProjectFromKey(key) {
     return this.database.object('gimmeCash/projects/' + key);;
   }
+
+  deleteProject(projectKey) {
+    let projectEntryInFirebase = this.getProjectFromKey(projectKey);
+    projectEntryInFirebase.remove();
+  }
+
+  updateProject(projectKey:string, currentProject:Project) {
+    this.getProjectFromKey(projectKey).update(currentProject);
+  }
 }

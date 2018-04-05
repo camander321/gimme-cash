@@ -1,3 +1,4 @@
 <h1>{{currentProject?.name}}</h1>
 <p>this is a test</p>
-<app-private-detail></app-private-detail>
+<app-private-detail [currentProject]='currentProject' [currentProjectId]='projectId' *ngIf='isOwner'></app-private-detail>
+<app-public-detail *ngIf='!isOwner'></app-public-detail>

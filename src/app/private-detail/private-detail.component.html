@@ -1,3 +1,5 @@
-<p>
-  private-detail works!
-</p>
+<button routerLink='' (click)="beginDeletingProject()">Delete</button>
+<button *ngIf='!showForm' (click)='showEditForm()'>Update</button>
+<div *ngIf='showForm'>
+  <app-edit-project (clickSaveUpdate)="showEditForm($event)" [projectKey]='currentProjectId' [currentProject]='currentProject'></app-edit-project>
+</div>

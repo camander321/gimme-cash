@@ -23,4 +23,14 @@ export class ListProjectsComponent implements OnInit {
   goToDetailPage(key:string) {
     this.router.navigate(['projects', key]);
   };
+
+  getShortDesc(project) {
+    let shortDesc:string;
+    if(project.description.length < 100) {
+      shortDesc = project.description;
+    } else {
+      shortDesc = project.description.slice(0, 50) + " ..."
+    }
+    return shortDesc;
+  }
 }

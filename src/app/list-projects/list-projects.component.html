@@ -1,5 +1,7 @@
-<div class="well" *ngFor='let project of projects | async'>
-  <h2 (click)="goToDetailPage(project.$key)">{{project.name}}</h2>
-  <h3>{{project.description}}</h3>
-  <h4>Type: {{project.type}} | Goal: {{project.fundGoal | currency}}</h4>
+<div class="outer">
+  <div class="well" *ngFor='let project of projects | async'>
+    <h2 (click)="goToDetailPage(project.$key)">{{project.name}} - {{project.owner}}</h2>
+    <h3>{{getShortDesc(project)}}</h3>
+    <h4>Type: {{project.type}} | Goal: {{project.fundGoal | currency}}</h4>
+  </div>
 </div>

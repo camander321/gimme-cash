@@ -6,12 +6,14 @@ export class Project {
   donations: Donation[];
   rewards: string[];
   type: string;
+  owner:string;
 
-  constructor(name:string, desc:string, goal:number, type:string) {
+  constructor(name:string, desc:string, goal:number, type:string, owner:string) {
     this.name = name;
     this.description = desc;
     this.fundGoal = goal;
     this.type = type
+    this.owner = owner;
   }
 }
 

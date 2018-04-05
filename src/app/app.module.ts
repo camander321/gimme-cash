@@ -16,6 +16,8 @@ import { AuthenticationComponent } from './authentication/authentication.compone
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { PrivateDetailComponent } from './private-detail/private-detail.component';
 import { PublicDetailComponent } from './public-detail/public-detail.component';
+import { EditProjectComponent } from './edit-project/edit-project.component';
+import { NgForm, NgModel, FormsModule } from '@angular/forms';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -34,14 +36,16 @@ export const firebaseConfig = {
     AuthenticationComponent,
     ProjectDetailsComponent,
     PrivateDetailComponent,
-    PublicDetailComponent
+    PublicDetailComponent,
+    EditProjectComponent
   ],
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
-    routing
+    routing,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
